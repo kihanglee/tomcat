@@ -1,4 +1,4 @@
-FROM docker pull tomcat:jdk8-adoptopenjdk-hotspot
+FROM tomcat:jdk8-adoptopenjdk-hotspot
 USER root
 
 COPY ROOT.war /opt/webserver/webapps/ROOT/
