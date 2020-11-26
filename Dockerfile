@@ -1,10 +1,10 @@
 FROM tomcat:jdk8-adoptopenjdk-hotspot
 USER root
 
-COPY ROOT.war /opt/webserver/webapps/ROOT/
-COPY mariadb-java-client-2.7.1-sources.jar /opt/webserver/lib/
-COPY server.xml /opt/webserver/conf
+COPY ROOT.war /usr/local/tomcat/webapps/
+COPY mariadb-java-client-2.7.1-sources.jar /usr/local/tomcat/lib/
+COPY server.xml /usr/local/tomcat/conf
 
-RUN chmod -R 777 /opt/webserver/*
+RUN chmod -R 777 /usr/local/tomcat/*
 
 EXPOSE 8080 
