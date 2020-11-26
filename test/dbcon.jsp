@@ -41,7 +41,7 @@
    
     } finally {
       
-        try { if(stmt != null) stme.close(); } catch (Exception e) {}
+        try { if(stmt != null) stmt.close(); } catch (Exception e) {}
         try { if(conn != null) conn.close(); } catch (Exception e) {}
     }
 %>
