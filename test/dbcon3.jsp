@@ -8,12 +8,12 @@
  try {
     Context init = new InitialContext();
     Context env = (Context)init.lookup("java:comp/env");
-    DataSource ds = (DataSource) env.lookup("jdbc/test_DB");
+    DataSource ds = (DataSource) env.lookup("jdbc/maria");
     conn = ds.getConnection();
     
-    out.println("<h3>연결되었습니다.</h3>");
+    out.println("<h3>Connection Success</h3>");
  }catch(Exception e){
-  out.println("<h3>연결에 실패하였습니다.</h3>");
+  out.println("<h3>Connection Fail</h3>");
   e.printStackTrace();
   }
 %>
