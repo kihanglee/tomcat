@@ -44,7 +44,7 @@
               factory="org.apache.catalina.users.MemoryUserDatabaseFactory"
               pathname="conf/tomcat-users.xml" />
 
-<Resource name="jdbc/maria" auth="Container" type="javax.sql.DataSource" maxActive="100" maxIdle="30" maxWait="10000" username="mtp3" password="mtp3" driverClassName="org.mariadb.jdbc.Driver" url="jdbc:mariadb://192.168.16.48:3306/employees"/>
+<Resource name="jdbc/maria" auth="Container" type="javax.sql.DataSource" maxActive="100" maxIdle="30" maxWait="10000" username="jinho" password="jinho" driverClassName="com.mysql.jdbc.Driver"" url="jdbc:mysql://192.168.16.48:3306/test"/>
   </GlobalNamingResources>
 
   <!-- A "Service" is a collection of one or more "Connectors" that share

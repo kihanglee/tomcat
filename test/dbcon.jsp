@@ -20,13 +20,13 @@
         try {
    
             // Create a statement and execute the query on it
-            stmt.execute("select * from emp");
+            stmt.execute("select * from user");
    
             // 결과레코드및 메타데이터
             ResultSet r = stmt.getResultSet();
             while (r.next()) {
-                    out.println("<BR />" + r.getString("empno"));
-                    out.println("<BR />" + r.getString("ename"));              
+                    out.println("<BR />" + r.getString("userID"));
+                    out.println("<BR />" + r.getString("userName"));              
             }
    
             // Clean up
